@@ -1,0 +1,9 @@
+project: savantenvs/poco
+target: date_time_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/date_time_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/date_time_fuzzer
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/poco
+target: jwt_decode_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/jwt_decode_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/jwt_decode_fuzzer
+    libfuzzer: true
+    timeout: 10

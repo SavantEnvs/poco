@@ -1,0 +1,10 @@
+project: savantenvs/poco
+target: xml_parser_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/xml_parser_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/xml_parser_fuzzer
+    dictionary: /mayhem/XML/fuzzing/xml.dict
+    libfuzzer: true
+    timeout: 10

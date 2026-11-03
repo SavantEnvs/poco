@@ -1,0 +1,9 @@
+project: savantenvs/poco
+target: http_message_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http_message_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/http_message_fuzzer
+    libfuzzer: true
+    timeout: 10

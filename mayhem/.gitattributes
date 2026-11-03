@@ -1,0 +1,2 @@
+# keep seed bytes verbatim (upstream .gitattributes normalizes line endings)
+* -text
