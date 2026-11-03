@@ -1,0 +1,9 @@
+project: savantenvs/poco
+target: foundation_misc_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/foundation_misc_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/foundation_misc_fuzzer
+    libfuzzer: true
+    timeout: 10

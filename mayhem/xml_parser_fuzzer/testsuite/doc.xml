@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE r [<!ENTITY e "val">]>
+<r xmlns:p="urn:x" a="1"><p:c>&e;<![CDATA[x<y]]></p:c><!-- c --><?pi data?></r>
